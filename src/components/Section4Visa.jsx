@@ -65,7 +65,7 @@ export default function Section4Visa() {
                         {/* Placeholder for Visa/Passport graphic */}
                         <div className="absolute inset-x-0 bottom-0 h-2/3 bg-gradient-to-t from-slate-100 to-transparent"></div>
 
-                        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-3/4 max-w-md bg-white rounded-3xl shadow-neon p-6 border border-slate-100 backdrop-blur-xl">
+                        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[90%] sm:w-3/4 max-w-md bg-white rounded-3xl shadow-neon p-6 border border-slate-100 backdrop-blur-xl">
                             <div className="flex justify-between items-center mb-8 pb-4 border-b border-slate-100">
                                 <div className="flex items-center gap-3">
                                     <div className="w-10 h-6 bg-blue-800 rounded"></div>
