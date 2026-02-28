@@ -74,9 +74,9 @@ export default function Section4Visa() {
                                 <MapPin className="w-5 h-5 text-slate-300" />
                             </div>
 
-                            <div className="flex gap-5 mb-6">
+                            <div className="flex gap-3 sm:gap-5 mb-6">
                                 {/* Happy client photo */}
-                                <div className="w-24 h-32 rounded-xl shrink-0 overflow-hidden border-2 border-purple-100 shadow-sm">
+                                <div className="w-20 h-28 sm:w-24 sm:h-32 rounded-xl shrink-0 overflow-hidden border-2 border-purple-100 shadow-sm">
                                     <img
                                         src="/client-photo.png"
                                         alt="Довольный клиент"
@@ -84,22 +84,24 @@ export default function Section4Visa() {
                                     />
                                 </div>
                                 {/* Client data */}
-                                <div className="flex-grow pt-1 space-y-2">
-                                    <div className="text-[10px] font-bold text-slate-400 uppercase tracking-widest">Работник</div>
-                                    <div className="text-base font-black text-slate-900">Андрей Иванов</div>
-                                    <div className="text-xs font-semibold text-slate-500">Строитель · Германия 🇩🇪</div>
-                                    <div className="mt-3 flex flex-col gap-1.5">
-                                        <div className="flex justify-between text-xs">
-                                            <span className="text-slate-400 font-medium">Зарплата Netto</span>
-                                            <span className="font-black text-slate-900">2 340 €/мес</span>
+                                <div className="flex-grow pt-1 space-y-1 sm:space-y-2">
+                                    <div className="text-[10px] font-bold text-slate-400 uppercase tracking-widest leading-none mb-1">Работник</div>
+                                    <div className="text-sm sm:text-base font-black text-slate-900 leading-tight">Андрей Иванов</div>
+                                    <div className="text-[11px] sm:text-xs font-semibold text-slate-500 leading-tight">
+                                        Строитель · <span className="whitespace-nowrap">Германия 🇩🇪</span>
+                                    </div>
+                                    <div className="mt-2 sm:mt-3 flex flex-col gap-1 sm:gap-1.5">
+                                        <div className="flex justify-between items-center gap-1 text-[11px] sm:text-xs">
+                                            <span className="text-slate-400 font-medium leading-tight">Зарплата Netto</span>
+                                            <span className="font-black text-slate-900 whitespace-nowrap">2 340 €/мес</span>
                                         </div>
-                                        <div className="flex justify-between text-xs">
-                                            <span className="text-slate-400 font-medium">Жильё</span>
-                                            <span className="font-bold text-slate-700">300 €/мес</span>
+                                        <div className="flex justify-between items-center gap-1 text-[11px] sm:text-xs">
+                                            <span className="text-slate-400 font-medium leading-tight">Жильё</span>
+                                            <span className="font-bold text-slate-700 whitespace-nowrap">300 €/мес</span>
                                         </div>
-                                        <div className="flex justify-between text-xs">
-                                            <span className="text-slate-400 font-medium">Предоплата</span>
-                                            <span className="font-black text-[#6C5CE7]">0 €</span>
+                                        <div className="flex justify-between items-center gap-1 text-[11px] sm:text-xs">
+                                            <span className="text-slate-400 font-medium leading-tight">Предоплата</span>
+                                            <span className="font-black text-[#6C5CE7] whitespace-nowrap">0 €</span>
                                         </div>
                                     </div>
                                 </div>
