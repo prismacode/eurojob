@@ -13,6 +13,17 @@ export default function MobileMenu() {
         setIsOpen(false);
     }, [location.pathname]);
 
+    React.useEffect(() => {
+        if (isOpen) {
+            document.body.style.overflow = 'hidden';
+        } else {
+            document.body.style.overflow = '';
+        }
+        return () => {
+            document.body.style.overflow = '';
+        };
+    }, [isOpen]);
+
     return (
         <div className="lg:hidden">
             <button
@@ -29,7 +40,7 @@ export default function MobileMenu() {
                         animate={{ opacity: 1, scale: 1 }}
                         exit={{ opacity: 0, scale: 0.95 }}
                         transition={{ duration: 0.2 }}
-                        className="fixed inset-0 z-[100] bg-white/95 backdrop-blur-xl flex flex-col p-6"
+                        className="fixed inset-0 z-[100] bg-[#f0efff] flex flex-col p-6 overflow-y-auto"
                     >
                         <div className="flex justify-between items-center mb-12">
                             <Link to="/" className="flex items-center gap-3">
