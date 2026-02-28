@@ -165,9 +165,29 @@ export default function Section1Hero() {
                         transition={{ duration: 0.8, ease: "easeOut" }}
                         className="text-center relative z-20 max-w-4xl"
                     >
-                        <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white shadow-purple border border-purple-100 mb-8 mt-12">
-                            <span className="w-2 h-2 rounded-full bg-[#6C5CE7] animate-pulse"></span>
-                            <span className="text-xs font-bold text-[#6C5CE7] tracking-wide uppercase">Платформа Релокации</span>
+                        <div className="flex items-center justify-center gap-4 mb-8 mt-12">
+                            {/* Mobile Flag 1 */}
+                            <motion.div
+                                animate={{ y: [-4, 4, -4], rotate: [-8, 4, -8] }}
+                                transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
+                                className="block lg:hidden w-11 h-8 rounded-md overflow-hidden shadow-md origin-center"
+                            >
+                                <img src="https://flagcdn.com/w80/de.png" alt="Germany" className="w-full h-full object-cover" />
+                            </motion.div>
+
+                            <div className="inline-flex items-center gap-2 px-3 py-2 sm:px-4 sm:py-2 rounded-full bg-white shadow-purple border border-purple-100">
+                                <span className="w-2 h-2 rounded-full bg-[#6C5CE7] animate-pulse"></span>
+                                <span className="text-[10px] sm:text-xs font-bold text-[#6C5CE7] tracking-wide uppercase">Платформа Релокации</span>
+                            </div>
+
+                            {/* Mobile Flag 2 */}
+                            <motion.div
+                                animate={{ y: [4, -4, 4], rotate: [4, -8, 4] }}
+                                transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }}
+                                className="block lg:hidden w-11 h-8 rounded-md overflow-hidden shadow-md origin-center"
+                            >
+                                <img src="https://flagcdn.com/w80/es.png" alt="Spain" className="w-full h-full object-cover" />
+                            </motion.div>
                         </div>
 
                         <h1 className="text-4xl sm:text-5xl lg:text-7xl font-black tracking-tight text-[#1a1a2e] leading-[1.05] mb-6">
