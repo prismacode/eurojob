@@ -41,7 +41,7 @@ export default function Section8FAQ() {
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
                             transition={{ duration: 0.5, delay: idx * 0.15 }}
-                            className="card-neon bg-white p-8 group cursor-pointer flex flex-col"
+                            className="card-purple rounded-3xl bg-white p-8 group cursor-pointer flex flex-col"
                         >
                             <div className="flex items-center gap-4 mb-6">
                                 <div className={`w-12 h-12 rounded-full ${faq.avatar} flex items-center justify-center text-xl shadow-inner group-hover:scale-110 transition-transform`}>

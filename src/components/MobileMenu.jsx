@@ -33,7 +33,7 @@ export default function MobileMenu() {
                     >
                         <div className="flex justify-between items-center mb-12">
                             <Link to="/" className="flex items-center gap-3">
-                                <div className="w-8 h-8 bg-black rounded-lg flex items-center justify-center text-[#ccff00] font-black text-xl">
+                                <div className="w-8 h-8 bg-[#6C5CE7] rounded-lg flex items-center justify-center shadow-purple text-white font-black text-xl">
                                     E
                                 </div>
                                 <span className="text-2xl font-black tracking-tight text-black uppercase">EUROJOB</span>
@@ -55,7 +55,7 @@ export default function MobileMenu() {
 
                         <div className="mt-auto pt-8 flex flex-col gap-4">
                             {user ? (
-                                <Link to="/dashboard" className="w-full flex items-center justify-center gap-3 bg-black text-[#ccff00] px-6 py-4 rounded-2xl font-black shadow-lg">
+                                <Link to="/dashboard" className="w-full flex items-center justify-center gap-3 bg-[#6C5CE7] text-white px-6 py-4 rounded-2xl font-black shadow-purple">
                                     <div className="w-8 h-8 rounded-full flex items-center justify-center overflow-hidden bg-white">
                                         <img src={`https://api.dicebear.com/7.x/notionists/svg?seed=${user.name}`} alt="User" />
                                     </div>
@@ -66,7 +66,7 @@ export default function MobileMenu() {
                                     <Link to="/login" className="w-full py-4 text-center text-slate-700 font-bold bg-slate-100 rounded-2xl hover:bg-slate-200 transition-colors">
                                         Войти
                                     </Link>
-                                    <Link to="/register" className="w-full btn-neon py-4 rounded-full text-center font-black shadow-neon text-black">
+                                    <Link to="/register" className="w-full btn-purple py-4 rounded-full text-center font-black shadow-purple text-white">
                                         Присоединиться
                                     </Link>
                                 </>
