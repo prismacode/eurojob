@@ -37,7 +37,7 @@ export default function Section1Hero() {
             {/* Lavender Blob #3 */}
             <div className="absolute bottom-0 left-[-5%] w-[350px] h-[350px] bg-[#d6d3ff] rounded-full blur-[100px] opacity-30 pointer-events-none z-0" />
 
-            <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full h-[100vh] flex flex-col">
+            <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full min-h-screen flex flex-col pb-12 lg:pb-0">
 
                 {/* Navigation */}
                 <nav className="flex justify-between items-center py-6 bg-white/60 backdrop-blur-md sticky top-0 z-50 px-4 sm:px-6 lg:px-8 -mx-4 sm:-mx-6 lg:-mx-8 rounded-b-2xl shadow-sm hardware-accelerate border-b border-white/40">
